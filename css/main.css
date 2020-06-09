@@ -1,0 +1,162 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-weight: 400;
+  font-family: Verdana, sans-serif;
+  line-height: 24px;
+  color: #4a6385;
+  font-size: 14px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.slider {
+  padding: 100px 0;
+}
+
+.slider-inner {
+  position: relative;
+}
+
+.slick-btn {
+  position: absolute;
+  top: 45%;
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  outline: none;
+  background-color: #ffc222;
+}
+
+.slick-btn.slick-disabled {
+  cursor: default;
+  background-color: transparent;
+}
+
+.slick-btn:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'icomoon';
+  color: #fff;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next:before {
+  content: "\f105";
+}
+
+.slick-prev:before {
+  content: "\f104";
+}
+
+.reviews {
+  padding-bottom: 100px;
+  background-color: #fafafa;
+}
+
+.reviews-slider .slick-list {
+  margin: 0 -50px;
+}
+
+.reviews-slider .slick-slide {
+  margin: 0 50px;
+  padding-bottom: 70px;
+}
+
+.reviews-slider-item {
+  outline: none;
+}
+
+.reviews-box {
+  display: flex;
+  box-shadow: 0px 21px 49px 1px rgba(41, 44, 61, 0.15);
+}
+
+.reviews-slider .slick-dots {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews-slider .slick-dots li {
+  margin: 0 8px;
+}
+
+.reviews-slider .slick-dots li.slick-active button {
+  background-color: #fff;
+  border: 2px solid #2575e7;
+}
+
+.reviews-slider .slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  background-color: #2575e7;
+  outline: none;
+}
+
+.reviews-box-images {
+  background-color: #2575e7;
+  width: 190px;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews-box-images img {
+  border-radius: 50%;
+  padding: 0 25px
+}
+
+.reviews-box-content {
+  background-color: #fff;
+  width: 330px;
+  padding: 0 40px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reviews-box-text {
+  margin-bottom: 30px;
+}
+
+.reviews-box-author span {
+  color: #2575e7;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+
+
